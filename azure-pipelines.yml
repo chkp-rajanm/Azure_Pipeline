@@ -25,8 +25,7 @@ trigger:
     condition: succeededOrFailed()
     inputs:
       testResultsFormat: VSTest
-      testResultsFiles: '**/*.trx' 
-
+      testResultsFiles: '**/*.trx'
 - job: LinuxRelease
   pool:
     vmImage: 'Ubuntu 16.04'
