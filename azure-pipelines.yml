@@ -96,7 +96,7 @@ jobs:
 
 - job: macOSRelease
   pool:
-    vmImage: 'Ubuntu-latest'
+    vmImage: 'macOS-latest'
   variables:
     buildConfiguration: 'Release'
   steps:
@@ -114,6 +114,3 @@ jobs:
     inputs:
       testResultsFormat: VSTest
       testResultsFiles: '**/*.trx' 
-
-  - task: PublishBuildArtifacts@1
-    displayName: 'Pub'
